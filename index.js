@@ -26,7 +26,7 @@ const logWebhook = new WebhookClient({ url: process.env.LOG_WEBHOOK_URL });
 
 // --- DESCRIPTION DU BOT ---
 // Texte affiché avec la commande /info
-const botDescription = "🤖 Ce  bot Discord créé par **vaskoo** pour afficher la description du bot et possibilité d'ajouter une panoplie énorme de commandes";
+const botDescription = "🤖 Ce bot Discord créé par **vaskoo** pour afficher la description du bot et possibilité d'ajouter une panoplie énorme de commandes";
 
 // --- COMMANDES ---
 // Liste des commandes slash du bot
@@ -40,15 +40,17 @@ const commands = [
 // Permet de synchroniser les commandes slash sur le serveur Discord
 const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
 
-// Quand le bot est prêt
-client.once('ready', () => {
+// --- ÉVÉNEMENT READY ---
+// Déclenché lorsque le bot est connecté et prêt
+client.once('ready', async () => {
     console.log(`✅ Connecté en tant que ${client.user.tag}`);
     console.log('🎉 Le bot est maintenant en ligne !');
     console.log('💬 Pour toutes demandes, je reste disponible.');
     console.log('👤 Auteur : vaskoo');
     console.log('🟦 Discord : vaskoo');
     console.log('🌐 Mon serveur : https://discord.gg/7PPmx4Uqg6');
-    client.user.setActivity('vos commandes', { type: 2 }); // Activité du bot
+
+    client.user.setActivity('vos commandes', { type: 2 }); // Affiche une activité sur le bot
 
     try {
         console.log('Déploiement des commandes...');
@@ -81,9 +83,6 @@ async function logCommand(interaction) {
 // Détecte quand un utilisateur utilise une commande
 client.on('interactionCreate', async interaction => {
     if (!interaction.isChatInputCommand()) return; // Ignore si ce n’est pas une commande slash
-
-    const channel = client.channels.cache.get(confessChannelId);
-    if (!channel && ['confess', 'reply'].includes(interaction.commandName))
 
     // --- LOG COMMANDE ---
     logCommand(interaction);

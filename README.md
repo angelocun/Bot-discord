@@ -10,7 +10,7 @@ For any requests, I am available.
 
 Author: vaskoo
 
-Discord: vaskoo
+Discord: _vaskoo_
 
 My Discord server: https://discord.gg/7PPmx4Uqg6
 
@@ -38,7 +38,7 @@ Pour toutes demandes, je reste disponible.
 
 Auteur : vaskoo
 
-Discord : _vaskoo_
+Discord : __vaskoo__
 
 Mon serveur discord : https://discord.gg/7PPmx4Uqg6
 

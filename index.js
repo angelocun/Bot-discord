@@ -26,7 +26,7 @@ const logWebhook = new WebhookClient({ url: process.env.LOG_WEBHOOK_URL });
 
 // --- DESCRIPTION DU BOT ---
 // Texte affiché avec la commande /info
-const botDescription = "🤖 Ce bot créé par **vaskoo** permet d'envoyer des confessions anonymes, répondre, consulter des infos sur les membres et jouer à des mini-jeux !";
+const botDescription = "🤖 Ce  bot Discord créé par **vaskoo** pour afficher la description du bot et possibilité d'ajouter une panoplie énorme de commandes";
 
 // --- COMMANDES ---
 // Liste des commandes slash du bot

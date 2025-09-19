@@ -83,10 +83,7 @@ client.on('interactionCreate', async interaction => {
     if (!interaction.isChatInputCommand()) return; // Ignore si ce n’est pas une commande slash
 
     const channel = client.channels.cache.get(confessChannelId);
-    if (!channel && ['confess', 'reply'].includes(interaction.commandName)) {
-        // Vérifie que le salon de confession existe
-        return interaction.reply({ content: 'Salon de confession introuvable.', ephemeral: true });
-    }
+    if (!channel && ['confess', 'reply'].includes(interaction.commandName))
 
     // --- LOG COMMANDE ---
     logCommand(interaction);

@@ -41,8 +41,13 @@ const commands = [
 const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
 
 // Quand le bot est prêt
-client.once('ready', async () => {
+client.once('ready', () => {
     console.log(`✅ Connecté en tant que ${client.user.tag}`);
+    console.log('🎉 Le bot est maintenant en ligne !');
+    console.log('💬 Pour toutes demandes, je reste disponible.');
+    console.log('👤 Auteur : vaskoo');
+    console.log('🟦 Discord : vaskoo');
+    console.log('🌐 Mon serveur : https://discord.gg/7PPmx4Uqg6');
     client.user.setActivity('vos confessions', { type: 2 }); // Activité du bot
 
     try {

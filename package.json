@@ -1,0 +1,21 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "🤖 Bot Discord pour confessions anonymes, infos sur les membres et mini-jeux",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "vaskoo",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.15.1",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
+
+

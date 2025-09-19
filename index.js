@@ -48,7 +48,7 @@ client.once('ready', () => {
     console.log('👤 Auteur : vaskoo');
     console.log('🟦 Discord : vaskoo');
     console.log('🌐 Mon serveur : https://discord.gg/7PPmx4Uqg6');
-    client.user.setActivity('vos confessions', { type: 2 }); // Activité du bot
+    client.user.setActivity('vos commandes', { type: 2 }); // Activité du bot
 
     try {
         console.log('Déploiement des commandes...');

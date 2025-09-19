@@ -21,11 +21,11 @@ My Discord server: https://discord.gg/7PPmx4Uqg6
 ## Installation ##
 
 1. Clone the repository:
-bash
+```bash
 git clone https://github.com/vaskoo0/Bot-discord.git
+```
 
-
-#### FRENCH  ####
+### FRENCH  ###
 
 
 # Discord Bot 🤖

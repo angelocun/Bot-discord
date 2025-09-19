@@ -8,7 +8,7 @@ Pour toutes demandes, je reste disponible.
 
 Auteur : vaskoo
 
-discord : _vaskoo_
+Discord : _vaskoo_
 
 Mon serveur discord : https://discord.gg/7PPmx4Uqg6
 
